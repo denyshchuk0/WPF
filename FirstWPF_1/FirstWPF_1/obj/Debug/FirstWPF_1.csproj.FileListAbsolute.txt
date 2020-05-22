@@ -1,0 +1,15 @@
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\bin\Debug\FirstWPF_1.exe.config
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\bin\Debug\FirstWPF_1.exe
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\bin\Debug\FirstWPF_1.pdb
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\FirstWPF_1.csprojAssemblyReference.cache
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\MainWindow.g.cs
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\App.g.cs
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\FirstWPF_1_MarkupCompile.cache
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\FirstWPF_1_MarkupCompile.lref
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\MainWindow.baml
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\FirstWPF_1.g.resources
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\FirstWPF_1.Properties.Resources.resources
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\FirstWPF_1.csproj.GenerateResource.cache
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\FirstWPF_1.csproj.CoreCompileInputs.cache
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\FirstWPF_1.exe
+D:\шаг\C#\WPF\FirstWPF_1\FirstWPF_1\obj\Debug\FirstWPF_1.pdb

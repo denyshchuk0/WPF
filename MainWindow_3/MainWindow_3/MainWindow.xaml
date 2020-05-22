@@ -1,0 +1,96 @@
+﻿<Window x:Class="MainWindow_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MainWindow_3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="450">
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="File"/>
+                <MenuItem Header="Edit"/>
+                <MenuItem Header="Options"/>
+                <MenuItem Header="Help"/>
+            </Menu>
+            <Border BorderBrush="Gray"
+                    BorderThickness="1"
+                    CornerRadius="10"
+                    Margin="2">
+                <StackPanel DockPanel.Dock="Left" Width="155">
+                    <Border BorderBrush="#673ab7"
+                            Background="#673ab7" 
+                            BorderThickness="1"
+                            CornerRadius="10"
+                            Margin="2">
+                        <Label 
+                               Foreground="White"
+                               FontWeight="Black"
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Top">Control Panel</Label>
+                    </Border>
+                    <TextBlock TextWrapping="Wrap" Margin="5">
+                        <Hyperlink Foreground="#673ab7" NavigateUri="">View all costumers</Hyperlink>
+                    </TextBlock>
+                    <TextBlock TextWrapping="Wrap" Margin="5">
+                        <Hyperlink Foreground="#673ab7" NavigateUri="">Create new costuners</Hyperlink>
+                    </TextBlock>
+                </StackPanel>
+            </Border>
+            <Border BorderBrush="Gray"
+                    BorderThickness="1"
+                    CornerRadius="10"
+                    Margin="2">
+                <StackPanel DockPanel.Dock="Right">
+                    <Border BorderBrush="#673ab7"
+                        Background="#673ab7" 
+                        BorderThickness="1"
+                        CornerRadius="10"
+                        Margin="0,2" Width="264">
+                        <Label   
+                            Foreground="White"
+                            FontWeight="Black" 
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Top" Content="Work spase"/>
+                    </Border>
+                    <Border BorderBrush="AliceBlue" BorderThickness="3">
+                        <TabControl Height="192" Width="261">
+                            <TabItem Header="All Costumers">
+                                <Grid Margin="1" Background="#FFE5E5E5"/>
+                            </TabItem>
+                            <TabItem Header="Login">
+                                <Grid Margin="1" Background="#FFE5E5E5" >
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="98*"/>
+                                        <ColumnDefinition Width="157*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Grid.Row="0" Grid.Column="0">Costumer type</Label>
+                                    <ComboBox Grid.Row="0" Grid.Column="2" Margin="4">
+                                        <ComboBoxItem>a</ComboBoxItem>
+                                        <ComboBoxItem>b</ComboBoxItem>
+                                        <ComboBoxItem>v</ComboBoxItem>
+                                    </ComboBox>
+                                    <Label Grid.Row="1" Grid.Column="0">First Name</Label>
+                                    <TextBox Grid.Row="1" Grid.Column="1" Margin="4"/>
+                                    <Label Grid.Row="2" Grid.Column="0">Last Name</Label>
+                                    <TextBox Grid.Row="2" Grid.Column="1" Margin="4"/>
+                                    <Label Grid.Row="3" Grid.Column="0">E-Maill</Label>
+                                    <TextBox Grid.Row="3" Grid.Column="1"  Margin="4"/>
+                                    <Button Grid.Row="4" Grid.Column="4" Margin="5,5">Save</Button>
+                                </Grid>
+                            </TabItem>
+                        </TabControl>
+                    </Border>
+                </StackPanel>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>

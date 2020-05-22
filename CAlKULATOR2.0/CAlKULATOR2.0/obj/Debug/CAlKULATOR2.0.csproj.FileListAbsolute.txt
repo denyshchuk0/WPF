@@ -1,0 +1,15 @@
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\bin\Debug\CAlKULATOR2.0.exe.config
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\bin\Debug\CAlKULATOR2.0.exe
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\bin\Debug\CAlKULATOR2.0.pdb
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\CAlKULATOR2.0.csprojAssemblyReference.cache
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\MainWindow.g.cs
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\App.g.cs
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\CAlKULATOR2.0_MarkupCompile.cache
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\CAlKULATOR2.0_MarkupCompile.lref
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\MainWindow.baml
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\CAlKULATOR2.0.g.resources
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\CAlKULATOR2._0.Properties.Resources.resources
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\CAlKULATOR2.0.csproj.GenerateResource.cache
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\CAlKULATOR2.0.csproj.CoreCompileInputs.cache
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\CAlKULATOR2.0.exe
+D:\шаг\C#\WPF\CAlKULATOR2.0\CAlKULATOR2.0\obj\Debug\CAlKULATOR2.0.pdb
