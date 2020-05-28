@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CAlKULATOR2._0"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="336.383">
+        Title="MainWindow" Height="450" Width="300">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -22,6 +22,7 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
+        
         <Border Grid.ColumnSpan="4" BorderBrush="Gray" BorderThickness="1">
             <Label Grid.ColumnSpan="4"
                VerticalAlignment="Center"
@@ -32,11 +33,11 @@
                x:Name="lbHistory"
                >0</Label>
         </Border>
+        
         <TextBox Grid.Row="1"
                Grid.ColumnSpan="4"
                HorizontalAlignment="Right"
-               Width="328"
-               Height="56"
+              BorderThickness="0"
                HorizontalContentAlignment="Right"
                TextAlignment="Right"
                FontSize="34"
@@ -45,63 +46,87 @@
 
         <Button Grid.Row="3"
                 Content="7"
+                Click="Button_Click"
                 />
         <Button Grid.Row="3"
                 Grid.Column="1"
                 Content="8"
+                Click="Button_Click"
                 />
         <Button Grid.Row="3"
                 Grid.Column="2"
                 Content="9"
+                Click="Button_Click"
                 />
         <Button Grid.Row="4"
                 Content="4"
+                Click="Button_Click"
                 />
         <Button Grid.Row="4"
                  Grid.Column="1"
                 Content="5"
+                Click="Button_Click"
                 />
         <Button Grid.Row="4"
                  Grid.Column="2"
                 Content="6"
+                Click="Button_Click"
                 />
         <Button Grid.Row="5"
                 Content="1"
+                Click="Button_Click"
                 />
         <Button Grid.Row="5"
                 Grid.Column="1"
                 Content="2"
+                Click="Button_Click"
                 />
         <Button Grid.Row="5"
                 Grid.Column="2"
                 Content="3"
+                Click="Button_Click"
                 />
         <Button Grid.Row="6"
                 Grid.Column="1"
                 Content="0"
+                Click="Button_Click"
                 />
 
         <Button Grid.Row="6"
                 Content="." 
+   
                 />
         <Button Grid.Row="6"
                 Grid.Column="2"
                 Grid.ColumnSpan="2"
-                Content="="
+                Content="=" Click="Res_Click"
                 />
         <Button Grid.Row="2"
                 Grid.Column="3"
-                Content="/"/>
+                Content="/"
+                x:Name="btnDivide"
+                Click="Divide_Click"
+                />
         
         <Button Grid.Row="4"
             Grid.Column="3"
-            Content="-"/>
+            Content="-"
+            x:Name="btnMinus"
+            Click="Minus_Click"
+            />
         <Button Grid.Row="5"
             Grid.Column="3"
-            Content="+"/>
+            Content="+"
+            x:Name="btnPlus"
+            Click="Plus_Click"
+                
+            />
         <Button Grid.Row="3"
             Grid.Column="3"
-            Content="*" />
+            x:Name="btnMulty"
+            Content="*"
+            Click="Multy_Click"/>
+        
         <Button Grid.Row="2"
             Grid.Column="2"
             Content=">" />
@@ -109,9 +134,8 @@
         <Button Grid.Row="2"
             Grid.Column="1"
             Content="C" />
-        
+
         <Button Grid.Row="2"
             Content="CE" />
-
     </Grid>
 </Window>

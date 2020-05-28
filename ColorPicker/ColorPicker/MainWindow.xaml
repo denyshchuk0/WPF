@@ -1,0 +1,126 @@
+﻿<Window x:Class="ColorPicker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ColorPicker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="138*"/>
+            <RowDefinition Height="281*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="119*"/>
+                    <ColumnDefinition Width="409*"/>
+                    <ColumnDefinition Width="50*"/>
+                </Grid.ColumnDefinitions>
+                <CheckBox x:Name="cbAlpha"
+                            Content="Alpha :"
+                          Grid.Row="0"
+                          Margin="20 0 0 0"
+                          VerticalAlignment="Center"
+                          />
+                <Label x:Name="lbAlpha"
+                        Margin="70 0 10 0"
+                        HorizontalContentAlignment="Right"
+                        Content="{Binding ElementName=sAlpha, Path=Value}"
+                     />
+                <Slider x:Name="sAlpha"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        IsSnapToTickEnabled="True"
+                        Minimum="0"
+                        Maximum="255"
+                        VerticalAlignment="Center"
+                        ValueChanged="sAlpha_ValueChanged"/>
+
+                <CheckBox Content="Red :"
+                          Grid.Row="1"
+                          Margin="20 0 0 0"
+                          VerticalAlignment="Center"/>
+                <Slider x:Name="sRed"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Minimum="0"
+                        Maximum="255"
+                        VerticalAlignment="Center"
+                        IsSnapToTickEnabled="True"
+                        ValueChanged="sAlpha_ValueChanged"/>
+                <Label  Grid.Row="1"
+                        x:Name="lbRed"
+                        Margin="70 0 10 0"
+                        HorizontalContentAlignment="Right"
+                        Content="{Binding ElementName=sRed, Path=Value}"
+/>
+                <CheckBox Content="Green :"
+                          Grid.Row="2"
+                          Margin="20 0 0 0"
+                          VerticalAlignment="Center"
+                          />
+                <Slider x:Name="sGreen"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Minimum="0"
+                        Maximum="255"
+                        VerticalAlignment="Center"
+                        IsSnapToTickEnabled="True"
+                        ValueChanged="sAlpha_ValueChanged"/>
+                <Label  Grid.Row="2"
+                        x:Name="lbGreen"
+                        Margin="70 0 10 0"
+                        HorizontalContentAlignment="Right"
+                        Content="{Binding ElementName=sGreen, Path=Value}"
+/>
+
+                <CheckBox Content="Blue :"
+                          Grid.Row="3"
+                          Margin="20 0 0 0"
+                          VerticalAlignment="Center"/>
+                <Slider x:Name="sBlue"
+                        Grid.Row="3"
+                        Grid.Column="1"
+                        Minimum="0"
+                        Maximum="255"
+                        VerticalAlignment="Center"
+                        IsSnapToTickEnabled="True"
+                        ValueChanged="sAlpha_ValueChanged"/>
+                <Label  Grid.Row="3"
+                        x:Name="lbBlue"
+                        Margin="70 0 10 0"
+                        HorizontalContentAlignment="Right"
+                        Content="{Binding ElementName=sBlue, Path=Value}"/>
+
+                <Button x:Name="btnAdd"
+                        Content="Add"
+                        Grid.Row="4"
+                        Margin="20 0 2 0" Click="btnAdd_Click"/>
+                <Button x:Name="btnColor"
+                        Grid.Column="2"
+                        Grid.RowSpan="4"
+                        Margin="5"/>
+            </Grid>
+        </DockPanel>
+        <ListBox x:Name="list" Grid.Row="1" Margin="10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label x:Name="lbColorName" Content="{Binding ColorName}" />
+                        <Button x:Name="lbColor" Width="400" Height="20" Background="{Binding ColorRGB}" />
+                        <Button x:Name="btnDelete" Click="btnDelete_Click" Tag="{Binding index}" Content="Delete" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
