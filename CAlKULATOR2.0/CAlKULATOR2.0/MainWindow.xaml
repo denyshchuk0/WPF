@@ -92,9 +92,10 @@
                 Click="Button_Click"
                 />
 
-        <Button Grid.Row="6"
-                Content="." 
-   
+        <Button x:Name="btnPoint"
+                Grid.Row="6"
+                Content="," 
+                Click="Button_Click"
                 />
         <Button Grid.Row="6"
                 Grid.Column="2"
@@ -129,13 +130,17 @@
         
         <Button Grid.Row="2"
             Grid.Column="2"
-            Content=">" />
+            Content=">"
+                Click="Button_Click"/>
 
         <Button Grid.Row="2"
             Grid.Column="1"
-            Content="C" />
+            Content="C"
+                Click="Button_Click"/>
 
-        <Button Grid.Row="2"
-            Content="CE" />
+        <Button 
+            Grid.Row="2"
+            Content="CE" 
+            Click="Button_Click"/>
     </Grid>
 </Window>
