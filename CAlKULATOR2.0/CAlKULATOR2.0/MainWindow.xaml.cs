@@ -76,8 +76,6 @@ namespace CAlKULATOR2._0
                 if (tmp == "")
                     tmp = "0";
             }
-
-
             else
                 tmp += btn.Content;
             tbLeter.Text = tmp;

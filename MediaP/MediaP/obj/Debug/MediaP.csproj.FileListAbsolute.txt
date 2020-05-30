@@ -1,0 +1,15 @@
+D:\шаг\C#\WPF\MediaP\MediaP\bin\Debug\MediaP.exe.config
+D:\шаг\C#\WPF\MediaP\MediaP\bin\Debug\MediaP.exe
+D:\шаг\C#\WPF\MediaP\MediaP\bin\Debug\MediaP.pdb
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\MediaP.csprojAssemblyReference.cache
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\MainWindow.g.cs
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\App.g.cs
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\MediaP_MarkupCompile.cache
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\MediaP_MarkupCompile.lref
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\MainWindow.baml
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\MediaP.g.resources
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\MediaP.Properties.Resources.resources
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\MediaP.csproj.GenerateResource.cache
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\MediaP.csproj.CoreCompileInputs.cache
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\MediaP.exe
+D:\шаг\C#\WPF\MediaP\MediaP\obj\Debug\MediaP.pdb
