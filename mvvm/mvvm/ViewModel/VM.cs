@@ -16,11 +16,11 @@ namespace mvvm.ViewModel
         public ObservableCollection<City> cities { get; set; } = new ObservableCollection<City>();
         public string Query { get =>query; set {
                 query = value; OnNotify();
-            } }
+            }}
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnNotify([CallerMemberName] string prop = "") {
             PropertyChanged.Invoke(this, new PropertyChangedEventArgs(prop));
         }
     }
-    }
+}
 
