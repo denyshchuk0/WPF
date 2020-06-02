@@ -1,0 +1,32 @@
+﻿<Window x:Class="mvvm.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mvvm.View"
+        mc:Ignorable="d"
+        
+        Title="MainWindow" Height="400" Width="300">
+        
+    <Window.Resources>
+        
+    </Window.Resources>
+    <Grid DataContext="{StaticResource vm}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="263*"/>
+            <RowDefinition Height="106*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="20">
+            <Label>Imput City</Label>
+            <TextBox Margin="10" Height="40"></TextBox>
+            <Button Width="100" Margin="10">Serach</Button>
+            <ListBox Margin="5" ItemsSource="{Binding cities}" DisplayMemberPath="LocalizedName"></ListBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBlock Text ="City"></TextBlock>
+            <TextBlock Text ="Dig"></TextBlock>
+            <TextBlock Text ="Weather"></TextBlock>
+           
+        </StackPanel>
+    </Grid>
+</Window>

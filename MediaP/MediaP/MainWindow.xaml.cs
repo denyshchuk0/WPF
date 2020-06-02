@@ -36,24 +36,26 @@ namespace _05_Controls_3
             if (ofd.ShowDialog() == true)
             {
                 media.Source = new Uri(ofd.FileName);
-                media.Play();
                 media.ToolTip = media.Source.LocalPath;
-                play = true;
-                btnPlay.Content = "Pause";
-                btnPlay.ToolTip = "Pause";
-                timer.Start();
+                MediaPlay();
             }
         }
+
+        private void MediaPlay()
+        {
+            media.Play();
+            play = true;
+            btnPlay.Content = "Pause";
+            btnPlay.ToolTip = "Pause";
+            timer.Start();
+        }
+
         private void Play_Click(object sender, RoutedEventArgs e)
         {
             slider.Value = media.Volume;
             if (play == false && media.Source != null)
             {
-                media.Play();
-                play = true;
-                btnPlay.Content = "Pause";
-                btnPlay.ToolTip = "Pause";
-                timer.Start();
+                MediaPlay();
             }
             else
             {
@@ -65,24 +67,17 @@ namespace _05_Controls_3
             }
         }
 
-        private void Plus_Click(object sender, RoutedEventArgs e)
-        {
+        private void Plus_Click(object sender, RoutedEventArgs e) =>
             media.Volume += 0.1;
-        }
-
-        private void Minus_Click(object sender, RoutedEventArgs e)
-        {
+        
+        private void Minus_Click(object sender, RoutedEventArgs e) =>
             media.Volume -= 0.1;
-        }
-        private void media_MediaOpened(object sender, RoutedEventArgs e)
-        {
+        
+        private void media_MediaOpened(object sender, RoutedEventArgs e) =>
             sTimeLips.Maximum = media.NaturalDuration.TimeSpan.TotalSeconds;
-        }
 
-        private void sTimeLips_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
+        private void sTimeLips_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)=>
             media.Position = TimeSpan.FromSeconds(sTimeLips.Value);
-        }
 
         bool visiblePlayList = false;
         private void btnPlayList_Click(object sender, RoutedEventArgs e)
@@ -112,26 +107,19 @@ namespace _05_Controls_3
             }
         }
 
-        private void listPlay_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            media.Source = list[listPlay.SelectedIndex];
-        }
+        private void listPlay_MouseDoubleClick(object sender, MouseButtonEventArgs e)=>
+            media.Source = list[listPlay.SelectedIndex]; 
 
-        private void BackTo_Click(object sender, RoutedEventArgs e)
-        {
+        private void BackTo_Click(object sender, RoutedEventArgs e)=>
             sTimeLips.Value = media.Position.TotalSeconds - 20;
-        }
 
-        private void FrontTo_click(object sender, RoutedEventArgs e)
-        {
+        private void FrontTo_click(object sender, RoutedEventArgs e)=>
             sTimeLips.Value = media.Position.TotalSeconds + 20;
-        }
 
         bool sound = true;
         double sValue = 0;
         private void OnOffSound_Click(object sender, RoutedEventArgs e)
         {
-
             if (sound == true)
             {
                 sValue = media.Volume;
