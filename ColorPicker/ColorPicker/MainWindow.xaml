@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ColorPicker"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="600">
+        Title="Color Viewer" Height="450" Width="600"
+        ResizeMode="NoResize"
+        >
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="138*"/>
@@ -30,6 +32,9 @@
                           Grid.Row="0"
                           Margin="20 0 0 0"
                           VerticalAlignment="Center"
+                          
+                          Checked="Alpha_Checked"
+                          Unchecked="Alpha_Unchecked"
                           />
                 <Label x:Name="lbAlpha"
                         Margin="70 0 10 0"
@@ -48,7 +53,9 @@
                 <CheckBox Content="Red :"
                           Grid.Row="1"
                           Margin="20 0 0 0"
-                          VerticalAlignment="Center"/>
+                          VerticalAlignment="Center"
+                          Checked="Red_Checked"
+                          Unchecked="Red_Unchecked"/>
                 <Slider x:Name="sRed"
                         Grid.Row="1"
                         Grid.Column="1"
@@ -67,6 +74,8 @@
                           Grid.Row="2"
                           Margin="20 0 0 0"
                           VerticalAlignment="Center"
+                          Checked="Green_Checked"
+                          Unchecked="Green_Unchecked"
                           />
                 <Slider x:Name="sGreen"
                         Grid.Row="2"
@@ -86,7 +95,9 @@
                 <CheckBox Content="Blue :"
                           Grid.Row="3"
                           Margin="20 0 0 0"
-                          VerticalAlignment="Center"/>
+                          VerticalAlignment="Center"
+                          Checked="Blue_Checked"
+                          Unchecked="Blue_Unchecked"/>
                 <Slider x:Name="sBlue"
                         Grid.Row="3"
                         Grid.Column="1"
@@ -106,6 +117,7 @@
                         Grid.Row="4"
                         Margin="20 0 2 0" Click="btnAdd_Click"/>
                 <Button x:Name="btnColor"
+                        
                         Grid.Column="2"
                         Grid.RowSpan="4"
                         Margin="5"/>
@@ -115,9 +127,9 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <Label x:Name="lbColorName" Content="{Binding ColorName}" />
-                        <Button x:Name="lbColor" Width="400" Height="20" Background="{Binding ColorRGB}" />
-                        <Button x:Name="btnDelete" Click="btnDelete_Click" Tag="{Binding index}" Content="Delete" />
+                        <Label  Grid.Column="0" Width="90" Height="30"  x:Name="lbColorName" Content="{Binding ColorName}" />
+                        <Button Grid.Column="1" Width="400" Margin="0 0 8 0" x:Name="lbColor" Height="20" Background="{Binding ColorRGB}" />
+                        <Button Grid.Column="2" Width="50" Height="20" x:Name="btnDelete" Click="btnDelete_Click" Tag="{Binding ColorName}" Content="Delete" />
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

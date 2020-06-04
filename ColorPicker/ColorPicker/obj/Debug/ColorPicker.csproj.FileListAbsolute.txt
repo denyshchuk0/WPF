@@ -1,7 +1,6 @@
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\bin\Debug\ColorPicker.exe.config
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\bin\Debug\ColorPicker.exe
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\bin\Debug\ColorPicker.pdb
-D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker.csprojAssemblyReference.cache
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\MainWindow.g.cs
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\App.g.cs
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker_MarkupCompile.cache
@@ -13,3 +12,4 @@ D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker.csproj.GenerateRe
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker.csproj.CoreCompileInputs.cache
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker.exe
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker.pdb
+D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker.csprojAssemblyReference.cache

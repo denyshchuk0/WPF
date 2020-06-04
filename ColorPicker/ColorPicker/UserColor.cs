@@ -8,7 +8,7 @@ using System.Windows.Media;
 
 namespace ColorPicker
 {
-    class UserColor
+    public class UserColor
     {
         public string ColorName { get; set; }
         public Brush ColorRGB { get; set; }
