@@ -12,4 +12,6 @@ D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker.csproj.GenerateRe
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker.csproj.CoreCompileInputs.cache
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker.exe
 D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker.pdb
-D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ColorPicker.csprojAssemblyReference.cache
+D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ViewColor.g.cs
+D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\шаг\C#\WPF\ColorPicker\ColorPicker\obj\Debug\ViewColor.baml

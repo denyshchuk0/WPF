@@ -127,8 +127,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <Label  Grid.Column="0" Width="90" Height="30"  x:Name="lbColorName" Content="{Binding ColorName}" />
-                        <Button Grid.Column="1" Width="400" Margin="0 0 8 0" x:Name="lbColor" Height="20" Background="{Binding ColorRGB}" />
+                        <local:Page UserColor="{Binding}"/>
                         <Button Grid.Column="2" Width="50" Height="20" x:Name="btnDelete" Click="btnDelete_Click" Tag="{Binding ColorName}" Content="Delete" />
                     </StackPanel>
                 </DataTemplate>

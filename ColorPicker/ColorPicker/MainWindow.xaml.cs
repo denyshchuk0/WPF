@@ -10,7 +10,6 @@ namespace ColorPicker
     /// </summary>
     public partial class MainWindow : Window
     {
-
         ObservableCollection<UserColor> listUc = new ObservableCollection<UserColor>();
         public MainWindow()
         {
@@ -50,7 +49,6 @@ namespace ColorPicker
                 }
             }
         }
-
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
             Button btn = sender as Button;
@@ -63,6 +61,7 @@ namespace ColorPicker
                 }
             }
         }
+
         private void Red_Checked(object sender, RoutedEventArgs e) => SliderEnabledTrue(sRed);
         private void Green_Checked(object sender, RoutedEventArgs e) => SliderEnabledTrue(sGreen);
         private void Alpha_Checked(object sender, RoutedEventArgs e) => SliderEnabledTrue(sAlpha);

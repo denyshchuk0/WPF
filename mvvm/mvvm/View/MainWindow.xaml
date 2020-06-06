@@ -3,30 +3,57 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:mvvm.View"
+        xmlns:vm="clr-namespace:mvvm.ViewModel"
+        xmlns:con="clr-namespace:mvvm.ViewModel.Convertos"
+        
         mc:Ignorable="d"
-        
-        Title="MainWindow" Height="400" Width="300">
-        
+        Title="WeatherApp" Height="400" Width="300">
+
     <Window.Resources>
-        
+        <vm:VM x:Key="vm"/>
+        <con:IsDayTimeToBackground x:Key="con"/>
+        <con:WeatherIconIntToImage x:Key="WIcon"/>
+        <con:HasPresipitationToString x:Key="conDP"/>
     </Window.Resources>
     <Grid DataContext="{StaticResource vm}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="263*"/>
-            <RowDefinition Height="106*"/>
+            <RowDefinition Height="259*"/>
+            <RowDefinition Height="110*"/>
         </Grid.RowDefinitions>
-        <StackPanel Margin="20">
-            <Label>Imput City</Label>
-            <TextBox Margin="10" Height="40"></TextBox>
-            <Button Width="100" Margin="10">Serach</Button>
-            <ListBox Margin="5" ItemsSource="{Binding cities}" DisplayMemberPath="LocalizedName"></ListBox>
+        <StackPanel  Margin="20">
+            <Label Margin="40 0 40 0">Imput City</Label>
+            <TextBox Margin="40 0 40 0" Height="20" Text="{Binding Query, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+            <Button Width="100" Margin="10" Command="{Binding SearchCommand}" 
+                                    CommandParameter="{Binding Query}">Serach</Button>
+            <ListBox   ItemsSource="{Binding Cities}"  SelectedItem="{Binding SelectedCity}" Height="127">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <ScrollViewer  VerticalScrollBarVisibility="auto">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Width="150" Text="{Binding LocalizedName}"/>
+                                <TextBlock Text="{Binding AdministrativeArea.LocalizedName}"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </StackPanel>
-        <StackPanel Grid.Row="1">
-            <TextBlock Text ="City"></TextBlock>
-            <TextBlock Text ="Dig"></TextBlock>
-            <TextBlock Text ="Weather"></TextBlock>
-           
-        </StackPanel>
+        <Grid Margin="10" Grid.Row="1" Background="{Binding CurrentConditions.IsDayTime, Converter={StaticResource con}}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="145*"/>
+                <ColumnDefinition Width="147*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Text="{Binding SelectedCity.LocalizedName}" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+            <TextBlock Grid.Row="1" Text="{Binding CurrentConditions.Temperature.Metric.Value}" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+            <TextBlock Grid.Row="2" Text="{Binding CurrentConditions.WeatherText}" Grid.ColumnSpan="2" Grid.RowSpan="3"/>
+            <TextBlock Grid.Row="3" Text="{Binding CurrentConditions.HasPrecipitation, Converter={StaticResource conDP}}"/>
+            <Image Width="100" HorizontalAlignment="Left" Grid.Column="1" Source="{Binding CurrentConditions.WeatherIcon, Converter={StaticResource WIcon}}" Margin="0,3" Grid.RowSpan="3"/>
+        </Grid>
     </Grid>
 </Window>

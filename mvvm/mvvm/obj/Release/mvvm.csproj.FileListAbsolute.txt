@@ -1,0 +1,8 @@
+D:\шаг\C#\WPF\mvvm\mvvm\obj\Release\mvvm.csprojAssemblyReference.cache
+D:\шаг\C#\WPF\mvvm\mvvm\obj\Release\View\MainWindow.g.cs
+D:\шаг\C#\WPF\mvvm\mvvm\obj\Release\App.g.cs
+D:\шаг\C#\WPF\mvvm\mvvm\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\шаг\C#\WPF\mvvm\mvvm\obj\Release\mvvm_MarkupCompile.cache
+D:\шаг\C#\WPF\mvvm\mvvm\obj\Release\mvvm_MarkupCompile.lref
+D:\шаг\C#\WPF\mvvm\mvvm\obj\Release\mvvm.exe
+D:\шаг\C#\WPF\mvvm\mvvm\obj\Release\mvvm.pdb

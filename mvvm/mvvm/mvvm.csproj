@@ -58,6 +58,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\Commands\SearchCommand.cs" />
+    <Compile Include="ViewModel\Convertos\HasPresipitationToString.cs" />
+    <Compile Include="ViewModel\Convertos\IsDayTimeToBackground.cs" />
+    <Compile Include="ViewModel\Convertos\WeatherIconIntToImage.cs" />
     <Compile Include="ViewModel\Helper\WeatherHelper.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -102,6 +106,123 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\34.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\39.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\8.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
