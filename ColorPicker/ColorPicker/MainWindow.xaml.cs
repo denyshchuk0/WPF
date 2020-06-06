@@ -16,6 +16,7 @@ namespace ColorPicker
             InitializeComponent();
             list.ItemsSource = listUc;
             sRed.IsEnabled = sAlpha.IsEnabled = sGreen.IsEnabled = sBlue.IsEnabled = false;
+            btnColor.Background = new SolidColorBrush(Colors.White);
         }
 
         private void sAlpha_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
@@ -60,6 +61,8 @@ namespace ColorPicker
                     break;
                 }
             }
+            if(list.Items.Count==0)
+                btnAdd.IsEnabled = true;
         }
 
         private void Red_Checked(object sender, RoutedEventArgs e) => SliderEnabledTrue(sRed);
