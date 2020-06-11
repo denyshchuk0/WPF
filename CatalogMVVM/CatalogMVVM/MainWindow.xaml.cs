@@ -36,10 +36,8 @@ namespace CatalogMVVM
                 (item as MenuItem).IsChecked = false;
             }
              (sender as MenuItem).IsChecked = !(sender as MenuItem).IsChecked;
-
-            this.Resources.MergedDictionaries.Clear();
-            this.Resources.MergedDictionaries.Add(dictionary);
-
+     
+            Application.Current.Resources.MergedDictionaries.Add(dictionary);
         }
     }
 }

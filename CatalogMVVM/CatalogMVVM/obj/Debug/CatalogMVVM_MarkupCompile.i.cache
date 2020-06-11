@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\шаг\C#\WPF\CatalogMVVM\CatalogMVVM\App.xaml
-5-702239192
+5-1739392790
 
 8-1968083215
 151834247294
-MainWindow.xaml;Properties\en.xaml;Properties\ua.xaml;Teams\dark.xaml;Teams\light.xaml;
+MainWindow.xaml;Properties\dark.xaml;Properties\en.xaml;Properties\light.xaml;Properties\ua.xaml;
 
-True
+False
 

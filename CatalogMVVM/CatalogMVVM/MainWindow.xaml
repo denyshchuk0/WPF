@@ -4,9 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CatalogMVVM" 
+        xmlns:vm="clr-namespace:CatalogMVVM.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="300" Width="500">
-    <Grid>
+    <Window.Resources>
+        <vm:PeopleVM x:Key="vm"/>
+    </Window.Resources>
+        <Grid DataContext="{StaticResource vm}">
         <Grid.RowDefinitions>
             <RowDefinition Height="21*"/>
             <RowDefinition Height="248*"/>
@@ -18,17 +22,19 @@
         </Grid.ColumnDefinitions>
         <DockPanel Grid.ColumnSpan="3">
             <Menu DockPanel.Dock="Top">
-                <MenuItem x:Name="lang" Header="{DynamicResource lang}">
-                    <MenuItem x:Name="en" Tag="en" Click="lang_Click" IsChecked="True" Header="{DynamicResource en}" />
-                    <MenuItem x:Name="ua" Tag="ua" Click="lang_Click" IsChecked="True" Header="{DynamicResource ua}" />
+                <MenuItem  Style="{DynamicResource menu}"  x:Name="lang" Header="{DynamicResource lang}">
+                    <MenuItem  Style="{DynamicResource menu}" x:Name="en" Tag="en" Click="lang_Click" IsChecked="True" Header="{DynamicResource en}" />
+                    <MenuItem Style="{DynamicResource menu}"  x:Name="ua" Tag="ua" Click="lang_Click"  Header="{DynamicResource ua}" />
                 </MenuItem>
-                <MenuItem x:Name="themes" Header="">
-                    <MenuItem x:Name="light" Tag="0" Click="lang_Click" Header="" />
-                    <MenuItem x:Name="dark" Tag="1" Click="lang_Click" Header="" />
+                <MenuItem  Style="{DynamicResource menu}"  x:Name="themes" Header="{DynamicResource themes}">
+                    <MenuItem  Style="{DynamicResource menu}"  x:Name="light" Tag="light" Click="lang_Click"  Header="{DynamicResource light}" >
+                        
+                    </MenuItem>
+                    <MenuItem  Style="{DynamicResource menu}"  x:Name="dark" Tag="dark"  Click="lang_Click"  Header="{DynamicResource dark}" />
                 </MenuItem>
             </Menu>
         </DockPanel>
-        <ListBox Grid.Column="0" Grid.Row="1">
+        <ListBox Grid.Column="0" Grid.Row="1" ItemsSource="{Binding peoples}" SelectedItem="{Binding People}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -40,11 +46,11 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <Border Grid.Column="1" Grid.Row="1">
-            <StackPanel>
-                <TextBox x:Name="name"></TextBox>
-                <TextBox x:Name="surname"></TextBox>
-                <TextBox x:Name="number"></TextBox>
-                <Button x:Name="add" Content="{DynamicResource add}"></Button>
+            <StackPanel DataContext="{Binding People}">
+                <TextBox x:Name="name" Text="{Binding Name}" ></TextBox>
+                <TextBox x:Name="surname" Text="{Binding Surname}"></TextBox>
+                <TextBox x:Name="number" Text="{Binding Number}"></TextBox>
+                <Button x:Name="add" Command="{Binding AddCommand}" Content="{DynamicResource add}"></Button>
                 <Button x:Name="clear" Content="{DynamicResource clear}"></Button>
             </StackPanel>
         </Border>

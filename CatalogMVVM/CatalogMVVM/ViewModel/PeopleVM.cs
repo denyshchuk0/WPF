@@ -11,40 +11,49 @@ namespace CatalogMVVM.ViewModel
 {
     class PeopleVM : INotifyPropertyChanged
     {
-        private string query;
         public ObservableCollection<People> peoples { get; set; } = new ObservableCollection<People>();
-        private People people;
+
         public PeopleVM()
         {
+            peoples.Add(new People() { 
+            Name="a",
+            Surname = "a",
+            Number = "a"});
+            peoples.Add(new People()
+            {
+                Name = "bbbbbbb",
+                Surname = "a",
+                Number = "a"
+            });
         }
+        People people;
+
         public People People
         {
             get { return people; }
-            set
-            {
-                people = value;
-             
-                OnNotify();
-            }
-        }
-        public string Query
-        {
-            get => query;
-            set
-            {
-                query = value;
+            set { people = value;
                 OnNotify();
             }
         }
 
+
         public void AddPeople() {
-            peoples.Add(people);
+            peoples.Add(new People()
+            {
+                Name = People.Name,
+                Surname = People.Surname,
+                Number = People.Number,
+            });
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnNotify([CallerMemberName] string prop = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(prop));
+        }
+
+        public void MakeRequestPeople() { 
+        
         }
         
     }
