@@ -1,0 +1,57 @@
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\bin\Debug\Classwork20200608_Registration_Trigger.exe.config
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\bin\Debug\Classwork20200608_Registration_Trigger.exe
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\bin\Debug\Classwork20200608_Registration_Trigger.pdb
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\bin\Debug\FontAwesome.WPF.dll
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\bin\Debug\FontAwesome.WPF.xml
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csprojAssemblyReference.cache
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\MainWindow.g.cs
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\App.g.cs
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger_MarkupCompile.cache
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger_MarkupCompile.lref
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\MainWindow.baml
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.g.resources
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.Properties.Resources.resources
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csproj.GenerateResource.cache
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csproj.CoreCompileInputs.cache
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csproj.CopyComplete
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.exe
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.pdb
+D:\Шаг\WPF\Classwork20200608_Registration_Trigger\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\bin\Debug\Classwork20200608_Registration_Trigger.exe.config
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\bin\Debug\Classwork20200608_Registration_Trigger.exe
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\bin\Debug\Classwork20200608_Registration_Trigger.pdb
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\bin\Debug\FontAwesome.WPF.dll
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\bin\Debug\FontAwesome.WPF.xml
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csprojAssemblyReference.cache
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\MainWindow.g.cs
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\App.g.cs
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger_MarkupCompile.cache
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger_MarkupCompile.lref
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\MainWindow.baml
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.g.resources
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.Properties.Resources.resources
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csproj.GenerateResource.cache
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csproj.CoreCompileInputs.cache
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csproj.CopyComplete
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.exe
+C:\Users\denys\OneDrive\Рабочий стол\Новая папка (2)\Новая папка\WPF\Classwork20200608_Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.pdb
+D:\шаг\C#\WPF\Registration_Trigger\bin\Debug\Classwork20200608_Registration_Trigger.exe.config
+D:\шаг\C#\WPF\Registration_Trigger\bin\Debug\Classwork20200608_Registration_Trigger.exe
+D:\шаг\C#\WPF\Registration_Trigger\bin\Debug\Classwork20200608_Registration_Trigger.pdb
+D:\шаг\C#\WPF\Registration_Trigger\bin\Debug\FontAwesome.WPF.dll
+D:\шаг\C#\WPF\Registration_Trigger\bin\Debug\FontAwesome.WPF.xml
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csprojAssemblyReference.cache
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\MainWindow.g.cs
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\App.g.cs
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger_MarkupCompile.cache
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger_MarkupCompile.lref
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\MainWindow.baml
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.g.resources
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.Properties.Resources.resources
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csproj.GenerateResource.cache
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csproj.CoreCompileInputs.cache
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.csproj.CopyComplete
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.exe
+D:\шаг\C#\WPF\Registration_Trigger\obj\Debug\Classwork20200608_Registration_Trigger.pdb
