@@ -11,13 +11,13 @@
         <ControlTemplate x:Key="tmlButton" TargetType="Button">
             <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" 
                                 Background="{TemplateBinding Background}" CornerRadius="25">
-               
-                    <ContentPresenter VerticalAlignment="Center"
+
+                <ContentPresenter VerticalAlignment="Center"
                                   Content="{TemplateBinding Content}"
                                   HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"          
                                   ContentTemplate="{TemplateBinding ContentTemplate}"
                                 />
-              
+
             </Border>
         </ControlTemplate>
 
@@ -35,7 +35,7 @@
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="BorderBrush" Value="White"/>
                     <Setter Property="BorderThickness" Value="1"/>
-                
+
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -66,7 +66,7 @@
                 </Trigger>
             </Style.Triggers>
         </Style>
-        
+
         <ControlTemplate  x:Key="txtPasswd" TargetType="TextBox">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -78,12 +78,10 @@
                         BorderBrush="{TemplateBinding Background}"
                         Background="#e5f0fe"
                         >
-                    
                     <ContentPresenter Content="{TemplateBinding Text}"
-                                   Margin="20, 9,0,10"
                                    RecognizesAccessKey="True"
+                                      Margin="20, 9,20,10"
                                    VerticalAlignment="{TemplateBinding VerticalAlignment}"/>
-         
                 </Border>
                 <Border Grid.Column="1" Background="#e5f0fe"
                         CornerRadius="0, 25, 25, 0"
@@ -98,6 +96,20 @@
             <Setter Property="FontFamily" Value="Inherit"/>
             <Setter Property="FontSize" Value="15"/>
             <Setter Property="Background" Value="#e3e7ef"/>
+            <Setter Property="Width"  Value="240"/>
+            <Setter Property="Height" Value="40"/>
+            <Style.Triggers>
+                <Trigger Property="IsKeyboardFocused" Value="True">
+                    <Setter Property="Cursor" Value="IBeam" ></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="st2" TargetType="TextBox">
+            <Setter Property="Template" Value="{StaticResource txtName}"/>
+            <Setter Property="FontFamily" Value="Inherit"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Background" Value="#e3e7ef"/>
             <Setter Property="Width"  Value="250"/>
             <Setter Property="Height" Value="48"/>
             <Style.Triggers>
@@ -109,7 +121,7 @@
 
     </Window.Resources>
     <StackPanel>
-        <TextBox Style="{StaticResource st}"/>
+        <TextBox Style="{StaticResource st2}"/>
         <TextBox Style="{StaticResource st}" />
         <Button Style="{StaticResource btn}" Content="Enter" HorizontalContentAlignment="Center" />
     </StackPanel>
